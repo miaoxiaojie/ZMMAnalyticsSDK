@@ -15,6 +15,7 @@
 		54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */; };
 		54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */; };
 		54C5957925B44AA8002C918E /* ZMMAPropertiesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5957725B44AA8002C918E /* ZMMAPropertiesManager.m */; };
+		54C5957F25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5957E25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsFileStore.m; sourceTree = "<group>"; };
 		54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAPropertiesManager.h; sourceTree = "<group>"; };
 		54C5957725B44AA8002C918E /* ZMMAPropertiesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAPropertiesManager.m; sourceTree = "<group>"; };
+		54C5957E25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAPropertiesManagerInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		54C5957525B44A2A002C918E /* OutgoingService */ = {
 			isa = PBXGroup;
 			children = (
+				54C5957E25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h */,
 			);
 			path = OutgoingService;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C5957F25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h in Headers */,
 				54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */,
 				54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */,
 				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
