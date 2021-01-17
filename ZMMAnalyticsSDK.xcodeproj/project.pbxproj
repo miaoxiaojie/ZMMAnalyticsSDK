@@ -13,6 +13,8 @@
 		5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */; };
 		54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */; };
 		54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */; };
+		54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */; };
+		54C5957925B44AA8002C918E /* ZMMAPropertiesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5957725B44AA8002C918E /* ZMMAPropertiesManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsSDK.m; sourceTree = "<group>"; };
 		54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsFileStore.h; sourceTree = "<group>"; };
 		54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsFileStore.m; sourceTree = "<group>"; };
+		54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAPropertiesManager.h; sourceTree = "<group>"; };
+		54C5957725B44AA8002C918E /* ZMMAPropertiesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAPropertiesManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		5487BD5525B2DEFC00128E5B /* ZMMAnalyticsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				54C5957225B449B1002C918E /* BuinessModules */,
 				54C5956825B44446002C918E /* UtilModules */,
 				5487BD5725B2DEFC00128E5B /* Info.plist */,
 				5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */,
@@ -111,6 +116,39 @@
 			path = FileStore;
 			sourceTree = "<group>";
 		};
+		54C5957225B449B1002C918E /* BuinessModules */ = {
+			isa = PBXGroup;
+			children = (
+				54C5957325B449CE002C918E /* Properties */,
+			);
+			path = BuinessModules;
+			sourceTree = "<group>";
+		};
+		54C5957325B449CE002C918E /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				54C5957525B44A2A002C918E /* OutgoingService */,
+				54C5957425B44A16002C918E /* Manager */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		54C5957425B44A16002C918E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */,
+				54C5957725B44AA8002C918E /* ZMMAPropertiesManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		54C5957525B44A2A002C918E /* OutgoingService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OutgoingService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -119,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */,
+				54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */,
 				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */,
+				54C5957925B44AA8002C918E /* ZMMAPropertiesManager.m in Sources */,
 				54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
