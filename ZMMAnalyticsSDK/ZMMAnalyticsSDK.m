@@ -10,8 +10,6 @@
 @interface ZMMAnalyticsSDK ()
 
 @property (nonatomic, strong) dispatch_queue_t serialQueue;
-@property (nonatomic, strong) NSDictionary *superProperties;
-
 
 @end
 
