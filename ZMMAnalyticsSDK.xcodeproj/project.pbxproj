@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		5487BD5D25B2DEFC00128E5B /* ZMMAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */; };
 		5487BD6225B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */; };
-		5487BD6425B2DEFC00128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BD5625B2DEFC00128E5B /* ZMMAnalyticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */; };
+		5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,12 @@
 
 /* Begin PBXFileReference section */
 		5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMMAnalyticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5487BD5625B2DEFC00128E5B /* ZMMAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsSDK.h; sourceTree = "<group>"; };
 		5487BD5725B2DEFC00128E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5487BD5C25B2DEFC00128E5B /* ZMMAnalyticsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMMAnalyticsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsSDKTests.m; sourceTree = "<group>"; };
 		5487BD6325B2DEFC00128E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsSDK.h; sourceTree = "<group>"; };
+		5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsSDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		5487BD5525B2DEFC00128E5B /* ZMMAnalyticsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5487BD5625B2DEFC00128E5B /* ZMMAnalyticsSDK.h */,
 				5487BD5725B2DEFC00128E5B /* Info.plist */,
+				5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */,
+				5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */,
 			);
 			path = ZMMAnalyticsSDK;
 			sourceTree = "<group>";
@@ -93,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5487BD6425B2DEFC00128E5B /* ZMMAnalyticsSDK.h in Headers */,
+				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
