@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5487BD5D25B2DEFC00128E5B /* ZMMAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */; };
 		5487BD6225B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */; };
-		5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */; };
+		5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */; };
 /* End PBXBuildFile section */
 

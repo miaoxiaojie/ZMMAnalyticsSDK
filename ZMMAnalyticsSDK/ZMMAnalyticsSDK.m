@@ -15,9 +15,17 @@
 
 @implementation ZMMAnalyticsSDK
 
-static ZMMAnalyticsSDK *
+static ZMMAnalyticsSDK *sharedInstance = nil;
 
 #pragma mark - Initialization
 
++ (ZMMAnalyticsSDK * _Nullable)sharedInstance
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
 
 @end
