@@ -36,9 +36,7 @@ static ZMMAnalyticsSDK *sharedInstance = nil;
     
     propertyDict = [propertyDict copy];
     id<ZMMAPropertiesManagerInterface> manager = [ZMMAPropertiesOutgoingService getAPropertiesManage];
-    dispatch_async(_serialQueue, ^{
-        [manager registerSuperProperties:propertyDict];
-    })
+    [manager registerSuperProperties:propertyDict];
     
 }
 

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZMMDataComparison : NSObject
 
++ (nullable NSArray *)sameLetterNewKeys:(NSArray *)newKeys
+                           superAllKeys:(NSArray *)superKeys;
 
 @end
 

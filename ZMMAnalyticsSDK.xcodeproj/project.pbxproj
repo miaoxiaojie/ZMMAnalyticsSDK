@@ -11,6 +11,8 @@
 		5487BD6225B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */; };
 		5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */; };
+		549259F925B598B10004BF92 /* ZMMAAutomaticProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 549259F725B598B10004BF92 /* ZMMAAutomaticProperties.h */; };
+		549259FA25B598B10004BF92 /* ZMMAAutomaticProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 549259F825B598B10004BF92 /* ZMMAAutomaticProperties.m */; };
 		54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */; };
 		54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */; };
 		54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */; };
@@ -40,6 +42,8 @@
 		5487BD6325B2DEFC00128E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsSDK.h; sourceTree = "<group>"; };
 		5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsSDK.m; sourceTree = "<group>"; };
+		549259F725B598B10004BF92 /* ZMMAAutomaticProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAAutomaticProperties.h; sourceTree = "<group>"; };
+		549259F825B598B10004BF92 /* ZMMAAutomaticProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAAutomaticProperties.m; sourceTree = "<group>"; };
 		54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsFileStore.h; sourceTree = "<group>"; };
 		54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsFileStore.m; sourceTree = "<group>"; };
 		54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAPropertiesManager.h; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 			path = ZMMAnalyticsSDKTests;
 			sourceTree = "<group>";
 		};
+		549259F625B598740004BF92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				549259F725B598B10004BF92 /* ZMMAAutomaticProperties.h */,
+				549259F825B598B10004BF92 /* ZMMAAutomaticProperties.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		54C5956825B44446002C918E /* UtilModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 		54C5957325B449CE002C918E /* Properties */ = {
 			isa = PBXGroup;
 			children = (
+				549259F625B598740004BF92 /* Model */,
 				54C5957525B44A2A002C918E /* OutgoingService */,
 				54C5957425B44A16002C918E /* Manager */,
 			);
@@ -181,6 +195,7 @@
 			files = (
 				54C5958B25B57BDA002C918E /* ZMMDataComparison.h in Headers */,
 				54C5958425B44E2C002C918E /* ZMMAPropertiesOutgoingService.h in Headers */,
+				549259F925B598B10004BF92 /* ZMMAAutomaticProperties.h in Headers */,
 				54C5957F25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h in Headers */,
 				54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */,
 				54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */,
@@ -285,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */,
+				549259FA25B598B10004BF92 /* ZMMAAutomaticProperties.m in Sources */,
 				54C5958525B44E2C002C918E /* ZMMAPropertiesOutgoingService.m in Sources */,
 				54C5958C25B57BDA002C918E /* ZMMDataComparison.m in Sources */,
 				54C5957925B44AA8002C918E /* ZMMAPropertiesManager.m in Sources */,
