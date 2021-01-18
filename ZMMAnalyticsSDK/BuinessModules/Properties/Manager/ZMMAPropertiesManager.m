@@ -25,4 +25,8 @@
     return _manager;
 }
 
+#pragma mark - Public Method
+
+
+
 @end

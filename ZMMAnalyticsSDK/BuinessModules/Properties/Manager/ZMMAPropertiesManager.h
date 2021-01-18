@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZMMAPropertiesManagerInterface.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZMMAPropertiesManager : NSObject
+@interface ZMMAPropertiesManager : NSObject<ZMMAPropertiesManagerInterface>
 
 /// 单利初始化
 + (ZMMAPropertiesManager * _Nullable)sharedInstance;

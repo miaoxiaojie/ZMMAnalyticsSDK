@@ -6,6 +6,8 @@
 //
 
 #import "ZMMAnalyticsSDK.h"
+#import "ZMMAPropertiesManagerInterface.h"
+#import "ZMMAPropertiesOutgoingService.h"
 
 @interface ZMMAnalyticsSDK ()
 
@@ -33,8 +35,9 @@ static ZMMAnalyticsSDK *sharedInstance = nil;
     }
     
     propertyDict = [propertyDict copy];
+    id<ZMMAPropertiesManagerInterface> manager = [ZMMAPropertiesOutgoingService getAPropertiesManage];
     dispatch_async(_serialQueue, ^{
-        
+        [manager registerSuperProperties:propertyDict];
     })
     
 }

@@ -6,10 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZMMAPropertiesManagerInterface.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZMMAPropertiesOutgoingService : NSObject
+
+/// 获得单利类
++ (id<ZMMAPropertiesManagerInterface>)getAPropertiesManage;
 
 @end
 

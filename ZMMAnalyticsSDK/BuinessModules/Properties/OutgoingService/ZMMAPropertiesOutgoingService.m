@@ -6,7 +6,14 @@
 //
 
 #import "ZMMAPropertiesOutgoingService.h"
+#import "ZMMAPropertiesManager.h"
 
 @implementation ZMMAPropertiesOutgoingService
+
++ (id<ZMMAPropertiesManagerInterface>)getAPropertiesManage
+{
+    ZMMAPropertiesManager *manager = [ZMMAPropertiesManager sharedInstance];
+    return manager;
+}
 
 @end

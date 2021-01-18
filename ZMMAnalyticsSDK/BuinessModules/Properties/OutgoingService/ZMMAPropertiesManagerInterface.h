@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZMMAPropertiesManagerInterface <NSObject>
 
+/// 公关属性
+/// @param propertyDict 属性
+- (void)registerSuperProperties:(NSDictionary *)propertyDict;
+
 @end
 
 NS_ASSUME_NONNULL_END
