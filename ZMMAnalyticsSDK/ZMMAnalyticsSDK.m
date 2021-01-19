@@ -33,7 +33,6 @@ static ZMMAnalyticsSDK *sharedInstance = nil;
     if (!(propertyDict && [propertyDict isKindOfClass:[NSDictionary class]])) {
         NSLog(@"注册公共属性失败")
     }
-    
     propertyDict = [propertyDict copy];
     id<ZMMAPropertiesManagerInterface> manager = [ZMMAPropertiesOutgoingService getAPropertiesManage];
     [manager registerSuperProperties:propertyDict];
