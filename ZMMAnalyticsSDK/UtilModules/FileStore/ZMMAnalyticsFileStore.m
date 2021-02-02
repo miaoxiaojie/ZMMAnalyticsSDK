@@ -36,8 +36,8 @@
         NSLog(@"key should not be nil for file store");
         return nil;
     }
-    NSString *filePath = [SAFileStore filePath:fileName];
-    return [SAFileStore unarchiveFromFile:filePath];
+    NSString *filePath = [ZMMAnalyticsFileStore filePath:fileName];
+    return [ZMMAnalyticsFileStore unarchiveFromFile:filePath];
 }
 
 + (id)unarchiveFromFile:(NSString *)filePath {

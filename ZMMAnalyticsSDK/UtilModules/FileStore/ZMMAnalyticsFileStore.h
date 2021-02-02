@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 文件本地存储
 /// @param fileName 本地存储文件名
 /// @param value 本地存储文件内容
-+ (BOOL)archiveWithFileName:(NSString *)fileName value:(id)value;
++ (BOOL)archiveWithFileName:(NSString *)fileName value:(nullable id)value;
 
 /// 获取本地存储的文件内容
 /// @param fileName 本地存储文件名

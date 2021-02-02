@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54389DAC25C02969007E827D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54389DAA25C02969007E827D /* ViewController.m */; };
+		54389DB425C02B82007E827D /* ZMMAdefaultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 54389DB325C02B82007E827D /* ZMMAdefaultData.m */; };
+		54389DBD25C02F7C007E827D /* ZMMAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54389DBC25C02F7C007E827D /* ZMMAnalyticsSDK.framework */; };
 		5487BD7F25B2E00F00128E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD7E25B2E00F00128E5B /* AppDelegate.m */; };
 		5487BD8225B2E00F00128E5B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD8125B2E00F00128E5B /* SceneDelegate.m */; };
-		5487BD8525B2E00F00128E5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD8425B2E00F00128E5B /* ViewController.m */; };
 		5487BD8825B2E00F00128E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5487BD8625B2E00F00128E5B /* Main.storyboard */; };
 		5487BD8A25B2E01200128E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5487BD8925B2E01200128E5B /* Assets.xcassets */; };
 		5487BD8D25B2E01200128E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5487BD8B25B2E01200128E5B /* LaunchScreen.storyboard */; };
@@ -36,13 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54389DAA25C02969007E827D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54389DAB25C02969007E827D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54389DB225C02B82007E827D /* ZMMAdefaultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAdefaultData.h; sourceTree = "<group>"; };
+		54389DB325C02B82007E827D /* ZMMAdefaultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAdefaultData.m; sourceTree = "<group>"; };
+		54389DBC25C02F7C007E827D /* ZMMAnalyticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZMMAnalyticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5487BD7A25B2E00F00128E5B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5487BD7D25B2E00F00128E5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5487BD7E25B2E00F00128E5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5487BD8025B2E00F00128E5B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		5487BD8125B2E00F00128E5B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5487BD8325B2E00F00128E5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5487BD8425B2E00F00128E5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5487BD8725B2E00F00128E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5487BD8925B2E01200128E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5487BD8C25B2E01200128E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54389DBD25C02F7C007E827D /* ZMMAnalyticsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54389D9E25C028F8007E827D /* BuinessModules */ = {
+			isa = PBXGroup;
+			children = (
+				54389DA825C02969007E827D /* Demo */,
+			);
+			path = BuinessModules;
+			sourceTree = "<group>";
+		};
+		54389DA825C02969007E827D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				54389DB025C02A37007E827D /* Models */,
+				54389DA925C02969007E827D /* Controller */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		54389DA925C02969007E827D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54389DAB25C02969007E827D /* ViewController.h */,
+				54389DAA25C02969007E827D /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54389DB025C02A37007E827D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54389DB125C02B65007E827D /* DefaultData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54389DB125C02B65007E827D /* DefaultData */ = {
+			isa = PBXGroup;
+			children = (
+				54389DB225C02B82007E827D /* ZMMAdefaultData.h */,
+				54389DB325C02B82007E827D /* ZMMAdefaultData.m */,
+			);
+			path = DefaultData;
+			sourceTree = "<group>";
+		};
+		54389DBB25C02F7C007E827D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54389DBC25C02F7C007E827D /* ZMMAnalyticsSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5487BD7125B2E00F00128E5B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +145,7 @@
 				5487BD9825B2E01200128E5B /* ExampleTests */,
 				5487BDA325B2E01200128E5B /* ExampleUITests */,
 				5487BD7B25B2E00F00128E5B /* Products */,
+				54389DBB25C02F7C007E827D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,12 +162,11 @@
 		5487BD7C25B2E00F00128E5B /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				54389D9E25C028F8007E827D /* BuinessModules */,
 				5487BD7D25B2E00F00128E5B /* AppDelegate.h */,
 				5487BD7E25B2E00F00128E5B /* AppDelegate.m */,
 				5487BD8025B2E00F00128E5B /* SceneDelegate.h */,
 				5487BD8125B2E00F00128E5B /* SceneDelegate.m */,
-				5487BD8325B2E00F00128E5B /* ViewController.h */,
-				5487BD8425B2E00F00128E5B /* ViewController.m */,
 				5487BD8625B2E00F00128E5B /* Main.storyboard */,
 				5487BD8925B2E01200128E5B /* Assets.xcassets */,
 				5487BD8B25B2E01200128E5B /* LaunchScreen.storyboard */,
@@ -266,10 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5487BD8525B2E00F00128E5B /* ViewController.m in Sources */,
 				5487BD7F25B2E00F00128E5B /* AppDelegate.m in Sources */,
 				5487BD9025B2E01200128E5B /* main.m in Sources */,
+				54389DAC25C02969007E827D /* ViewController.m in Sources */,
 				5487BD8225B2E00F00128E5B /* SceneDelegate.m in Sources */,
+				54389DB425C02B82007E827D /* ZMMAdefaultData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

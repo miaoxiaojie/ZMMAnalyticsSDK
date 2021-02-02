@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543D1E8B25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 543D1E8A25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h */; };
 		5487BD5D25B2DEFC00128E5B /* ZMMAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */; };
 		5487BD6225B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */; };
 		5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		543D1E8A25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsSDKPrivate.h; sourceTree = "<group>"; };
 		5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMMAnalyticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5487BD5725B2DEFC00128E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5487BD5C25B2DEFC00128E5B /* ZMMAnalyticsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMMAnalyticsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				5487BD5725B2DEFC00128E5B /* Info.plist */,
 				5487BDC025B2FDE100128E5B /* ZMMAnalyticsSDK.h */,
 				5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */,
+				543D1E8A25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h */,
 			);
 			path = ZMMAnalyticsSDK;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */,
 				54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */,
 				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
+				543D1E8B25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

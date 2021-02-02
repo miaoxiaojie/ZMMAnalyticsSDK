@@ -25,6 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param propertyDict 传入 merge 到公共属性
 - (void)registerSuperProperties:(NSDictionary *)propertyDict;
 
+#pragma mark track event
+
+/// 调用 track 接口，追踪一个带有属性的 event
+/// @param event event的名称
+/// @param propertyDict  event的属性
+- (void)track:(NSString *)event withProperties:(nullable NSDictionary *)propertieDict;
+
+
+
 
 @end
 

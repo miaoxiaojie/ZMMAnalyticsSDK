@@ -6,6 +6,8 @@
 //
 
 #import "ZMMAAutomaticProperties.h"
+#include <sys/utsname.h>
+#import <UIKit/UIKit.h>
 
 @implementation ZMMAAutomaticProperties
 

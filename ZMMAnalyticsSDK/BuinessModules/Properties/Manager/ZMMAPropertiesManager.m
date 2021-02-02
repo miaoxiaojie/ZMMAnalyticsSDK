@@ -26,7 +26,7 @@ static NSString *const ZMMAarchiveWithFileName = @"ZMMASuper_properties";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _manager = [[self alloc]init];
-    })
+    });
     return _manager;
 }
 
@@ -42,7 +42,7 @@ static NSString *const ZMMAarchiveWithFileName = @"ZMMASuper_properties";
         if (unregisterPropertyKeys.count > 0) {
             [self p_unregisterSuperProperty:unregisterPropertyKeys];
         }
-    })
+    });
 }
 
 - (void)archiveSuperProperties {
