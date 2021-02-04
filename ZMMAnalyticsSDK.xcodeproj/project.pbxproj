@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543C12D225CB9CEB0094DDFB /* ZMMARuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 543C12D025CB9CEB0094DDFB /* ZMMARuntime.h */; };
+		543C12D325CB9CEB0094DDFB /* ZMMARuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 543C12D125CB9CEB0094DDFB /* ZMMARuntime.m */; };
+		543C12DF25CBA22E0094DDFB /* UITableView+AutoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 543C12DD25CBA22D0094DDFB /* UITableView+AutoTrack.m */; };
+		543C12E025CBA22E0094DDFB /* UITableView+AutoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 543C12DE25CBA22D0094DDFB /* UITableView+AutoTrack.h */; };
 		543D1E8B25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 543D1E8A25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h */; };
 		5487BD5D25B2DEFC00128E5B /* ZMMAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */; };
 		5487BD6225B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BD6125B2DEFC00128E5B /* ZMMAnalyticsSDKTests.m */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		543C12D025CB9CEB0094DDFB /* ZMMARuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMARuntime.h; sourceTree = "<group>"; };
+		543C12D125CB9CEB0094DDFB /* ZMMARuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMARuntime.m; sourceTree = "<group>"; };
+		543C12DD25CBA22D0094DDFB /* UITableView+AutoTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AutoTrack.m"; sourceTree = "<group>"; };
+		543C12DE25CBA22D0094DDFB /* UITableView+AutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AutoTrack.h"; sourceTree = "<group>"; };
 		543D1E8A25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsSDKPrivate.h; sourceTree = "<group>"; };
 		5487BD5325B2DEFC00128E5B /* ZMMAnalyticsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZMMAnalyticsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5487BD5725B2DEFC00128E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		543C12CF25CB9B910094DDFB /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				543C12D025CB9CEB0094DDFB /* ZMMARuntime.h */,
+				543C12D125CB9CEB0094DDFB /* ZMMARuntime.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		543C12DC25CBA22D0094DDFB /* Cagetory */ = {
+			isa = PBXGroup;
+			children = (
+				543C12DD25CBA22D0094DDFB /* UITableView+AutoTrack.m */,
+				543C12DE25CBA22D0094DDFB /* UITableView+AutoTrack.h */,
+			);
+			path = Cagetory;
+			sourceTree = "<group>";
+		};
 		5487BD4925B2DEFC00128E5B = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +154,8 @@
 		54C5956825B44446002C918E /* UtilModules */ = {
 			isa = PBXGroup;
 			children = (
+				543C12DC25CBA22D0094DDFB /* Cagetory */,
+				543C12CF25CB9B910094DDFB /* Runtime */,
 				54C5958825B57BC2002C918E /* DataComparison */,
 				54C5956925B4451C002C918E /* FileStore */,
 			);
@@ -202,8 +230,10 @@
 				54C5957F25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h in Headers */,
 				54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */,
 				54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */,
+				543C12D225CB9CEB0094DDFB /* ZMMARuntime.h in Headers */,
 				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
 				543D1E8B25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h in Headers */,
+				543C12E025CBA22E0094DDFB /* UITableView+AutoTrack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */,
+				543C12D325CB9CEB0094DDFB /* ZMMARuntime.m in Sources */,
 				549259FA25B598B10004BF92 /* ZMMAAutomaticProperties.m in Sources */,
 				54C5958525B44E2C002C918E /* ZMMAPropertiesOutgoingService.m in Sources */,
+				543C12DF25CBA22E0094DDFB /* UITableView+AutoTrack.m in Sources */,
 				54C5958C25B57BDA002C918E /* ZMMDataComparison.m in Sources */,
 				54C5957925B44AA8002C918E /* ZMMAPropertiesManager.m in Sources */,
 				54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */,
