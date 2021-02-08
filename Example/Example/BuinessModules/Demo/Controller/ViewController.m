@@ -35,7 +35,6 @@ UITableViewDelegate>
 {
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero
                                                     style:UITableViewStylePlain];
-    [_tableView setDelegate:self];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.scrollEnabled = NO;
