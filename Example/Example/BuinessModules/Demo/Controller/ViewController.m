@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "ZMMAdefaultData.h"
 #import <ZMMAnalyticsSDK/ZMMAnalyticsSDK.h>
+#import <objc/runtime.h>
 
 @interface ViewController ()<
 UITableViewDataSource,
@@ -34,6 +35,7 @@ UITableViewDelegate>
 {
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero
                                                     style:UITableViewStylePlain];
+    [_tableView setDelegate:self];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.scrollEnabled = NO;
@@ -42,6 +44,7 @@ UITableViewDelegate>
     _tableView.backgroundColor =  [UIColor clearColor];
     [_tableView setSeparatorColor:[UIColor colorWithWhite:255/255 alpha:0.2]];
     [self.view addSubview:_tableView];
+    
 }
 
 - (void)p_setAllViesFrame

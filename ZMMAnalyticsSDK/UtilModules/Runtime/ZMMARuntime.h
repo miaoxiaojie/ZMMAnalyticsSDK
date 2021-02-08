@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 extern const struct ZMMARuntime
 {
     void (*transforInstanceMethod_zmma)(Class, SEL, SEL);
+    void (*classAddMethod_zmma)(Class, SEL, IMP);
     
 }runTime;
 

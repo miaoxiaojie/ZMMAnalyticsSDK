@@ -17,15 +17,24 @@
 /// @param swizzledSelector 交换方法
 static void transforInstanceMethod_zmma(Class class, SEL originalSelector, SEL swizzledSelector)
 {
-    Method originalMethod = class_getClassMethod(class, originalSelector);
-    Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
+    Method originalMethod = class_getInstanceMethod(class, originalSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
     if (originalMethod != NULL && swizzledMethod != NULL) {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
 
+static void classAddMethod_zmma(Class class, SEL destinationdeSel, IMP imp)
+{
+    Method sourceMethod = class_getInstanceMethod(class, destinationdeSel);
+    const char * encoding = method_getTypeEncoding(sourceMethod);
+    class_addMethod(class, destinationdeSel, imp, encoding);
+    
+}
+
 const struct ZMMARuntime runTime = {
-    .transforInstanceMethod_zmma = transforInstanceMethod_zmma
+    .transforInstanceMethod_zmma = transforInstanceMethod_zmma,
+    .classAddMethod_zmma = classAddMethod_zmma,
 };
 
 @end

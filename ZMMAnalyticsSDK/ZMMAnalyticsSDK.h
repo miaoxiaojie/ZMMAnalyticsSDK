@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,7 +33,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param propertyDict  event的属性
 - (void)track:(NSString *)event withProperties:(nullable NSDictionary *)propertieDict;
 
-
+/// 支持UITableView 触发APPClick
+/// @param tableView
+/// @param indexPath 位置
+/// @param properties 自定义事件属性
+- (void)trackAppClickWithTableView:(UITableView *)tableView
+          didSelectRowAtIndex_Path:(NSIndexPath *)indexPath
+                        properties:(nullable NSDictionary<NSString *,id> *)properties;
 
 
 @end

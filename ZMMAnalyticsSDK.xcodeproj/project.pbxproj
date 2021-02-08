@@ -18,6 +18,7 @@
 		5487BDC325B2FDE100128E5B /* ZMMAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */; };
 		549259F925B598B10004BF92 /* ZMMAAutomaticProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 549259F725B598B10004BF92 /* ZMMAAutomaticProperties.h */; };
 		549259FA25B598B10004BF92 /* ZMMAAutomaticProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 549259F825B598B10004BF92 /* ZMMAAutomaticProperties.m */; };
+		54931E9825D11C74002AC180 /* ZMMASchemeConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 54931E9725D11C74002AC180 /* ZMMASchemeConfig.h */; };
 		54C5956C25B4457B002C918E /* ZMMAnalyticsFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */; };
 		54C5956D25B4457B002C918E /* ZMMAnalyticsFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */; };
 		54C5957825B44AA8002C918E /* ZMMAPropertiesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */; };
@@ -54,6 +55,7 @@
 		5487BDC125B2FDE100128E5B /* ZMMAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsSDK.m; sourceTree = "<group>"; };
 		549259F725B598B10004BF92 /* ZMMAAutomaticProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAAutomaticProperties.h; sourceTree = "<group>"; };
 		549259F825B598B10004BF92 /* ZMMAAutomaticProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAAutomaticProperties.m; sourceTree = "<group>"; };
+		54931E9725D11C74002AC180 /* ZMMASchemeConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMASchemeConfig.h; sourceTree = "<group>"; };
 		54C5956A25B4457B002C918E /* ZMMAnalyticsFileStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAnalyticsFileStore.h; sourceTree = "<group>"; };
 		54C5956B25B4457B002C918E /* ZMMAnalyticsFileStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMAnalyticsFileStore.m; sourceTree = "<group>"; };
 		54C5957625B44AA8002C918E /* ZMMAPropertiesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMAPropertiesManager.h; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		5487BD5525B2DEFC00128E5B /* ZMMAnalyticsSDK */ = {
 			isa = PBXGroup;
 			children = (
+				54931E9625D11BB5002AC180 /* ConfigModules */,
 				54C5957225B449B1002C918E /* BuinessModules */,
 				54C5956825B44446002C918E /* UtilModules */,
 				5487BD5725B2DEFC00128E5B /* Info.plist */,
@@ -151,6 +154,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		54931E9525D11B5C002AC180 /* AppClick */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppClick;
+			sourceTree = "<group>";
+		};
+		54931E9625D11BB5002AC180 /* ConfigModules */ = {
+			isa = PBXGroup;
+			children = (
+				54931E9725D11C74002AC180 /* ZMMASchemeConfig.h */,
+			);
+			path = ConfigModules;
+			sourceTree = "<group>";
+		};
 		54C5956825B44446002C918E /* UtilModules */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +192,7 @@
 		54C5957225B449B1002C918E /* BuinessModules */ = {
 			isa = PBXGroup;
 			children = (
+				54931E9525D11B5C002AC180 /* AppClick */,
 				54C5957325B449CE002C918E /* Properties */,
 			);
 			path = BuinessModules;
@@ -225,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C5958B25B57BDA002C918E /* ZMMDataComparison.h in Headers */,
+				543C12E025CBA22E0094DDFB /* UITableView+AutoTrack.h in Headers */,
+				54931E9825D11C74002AC180 /* ZMMASchemeConfig.h in Headers */,
 				54C5958425B44E2C002C918E /* ZMMAPropertiesOutgoingService.h in Headers */,
 				549259F925B598B10004BF92 /* ZMMAAutomaticProperties.h in Headers */,
 				54C5957F25B44D2E002C918E /* ZMMAPropertiesManagerInterface.h in Headers */,
@@ -233,7 +254,6 @@
 				543C12D225CB9CEB0094DDFB /* ZMMARuntime.h in Headers */,
 				5487BDC225B2FDE100128E5B /* ZMMAnalyticsSDK.h in Headers */,
 				543D1E8B25C8EAC3009F2ABD /* ZMMAnalyticsSDKPrivate.h in Headers */,
-				543C12E025CBA22E0094DDFB /* UITableView+AutoTrack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
