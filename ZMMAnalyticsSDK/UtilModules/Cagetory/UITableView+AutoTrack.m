@@ -11,7 +11,7 @@
 #import "ZMMASchemeConfig.h"
 #import "ZMMAnalyticsSDK.h"
 
-static NSString *const swizzling_tableViewDidSelect = @"swizzling_tableViewDidSelectRowAtIndexPathInClass:";
+static NSString *const swizzling_tableViewDidSelect = @"swizzling_tableViewDidSelectRowAtIndexPathWithDelegate:";
 
 @implementation UITableView (AutoTrack)
 
@@ -27,7 +27,11 @@ static NSString *const swizzling_tableViewDidSelect = @"swizzling_tableViewDidSe
     }
 #ifdef ZMMAMethodsExchange
     
-    [self swizzling_tableViewDidSelectRowAtIndexPathInClass:delegate];
+    [self swizzling_tableViewDidSelectRowAtIndexPathWithDelegate:(id)delegate];
+    
+#endif
+    
+#ifdef  ZMMADynamicSubclass
     
 #endif
     
@@ -35,25 +39,25 @@ static NSString *const swizzling_tableViewDidSelect = @"swizzling_tableViewDidSe
 
 #ifdef ZMMAMethodsExchange
 
-- (void)swizzling_tableViewDidSelectRowAtIndexPathInClass:(id)object
+- (void)swizzling_tableViewDidSelectRowAtIndexPathWithDelegate:(id)delegate
 {
     //方法名
     SEL originalSel =  NSSelectorFromString(@"tableView:didSelectRowAtIndexPath:");
     //当代理对象没有实现didSelectRowAtIndexPath 直接返回
-    if (![object respondsToSelector:originalSel]) {
+    if (![delegate respondsToSelector:originalSel]) {
         return;
     }
     //目的方法
     SEL destinationSel = NSSelectorFromString(swizzling_tableViewDidSelect);
     //当对象已经实现了本方法返回
-    if ([object respondsToSelector:destinationSel]) {
+    if ([delegate respondsToSelector:destinationSel]) {
         return;
     }
     IMP imp = class_getMethodImplementation([self class], @selector(swizzling_tableView:didSelectRowAtIndexPath:));
     //tableView对象添加方法
-    runTime.classAddMethod_zmma([object class],destinationSel,imp);
+    runTime.classAddMethod_zmma([delegate class],destinationSel,imp);
     //交换方法
-    runTime.transforInstanceMethod_zmma([object class],originalSel,destinationSel);
+    runTime.transforInstanceMethod_zmma([delegate class],originalSel,destinationSel);
     
 }
     
